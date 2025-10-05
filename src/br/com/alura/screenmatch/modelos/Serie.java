@@ -6,6 +6,10 @@ public class Serie extends Title{
     private int minutesPerEpisode;
     private boolean active;
 
+    public Serie(String name, int releaseYear) {
+        super(name, releaseYear);
+    }
+
     public int getSeasons() {return seasons;}
     public int getEpisodesPerSeason() {return episodesPerSeason;}
     public int getMinutesPerEpisode() {return minutesPerEpisode;}
@@ -26,6 +30,6 @@ public class Serie extends Title{
         System.out.println("\nNome da série: " + this.getName());
         System.out.println("Ano de lançamento: " + this.getReleaseYear());
         System.out.println("Duração total: " + this.getDurationInMinutes() + " minutos");
-        System.out.println("Nota Atual " + this.getName() + " é: " + this.getRating());
+        System.out.println("Nota Atual " + this.getRating());
     }
 }

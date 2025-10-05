@@ -5,11 +5,9 @@ import br.com.alura.screenmatch.modelos.Serie;
 void main() {
 
     // Generating a new movie
-    Movie myMovie = new Movie();
+    Movie myMovie = new Movie("Top Gun Maverick", 2022);
 
     // Giving attributes for the movie
-    myMovie.setName("Top Gun Maverick");
-    myMovie.setReleaseYear(2022);
     myMovie.setAvailableOnPlan(true);
     myMovie.setDurationInMinutes(125);
 
@@ -21,9 +19,7 @@ void main() {
     // Showing on Screen
     myMovie.showInfo();
 
-    Serie mySerie = new Serie();
-    mySerie.setName("Lost");
-    mySerie.setReleaseYear(2006);
+    Serie mySerie = new Serie("Lost", 2006);
     mySerie.setAvailableOnPlan(true);
     mySerie.setSeasons(5);
     mySerie.setEpisodesPerSeason(10);
